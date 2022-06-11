@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class MyDate {
+            day
+            month
+            year
+
+            constructor(day, month, year) {
+                this.day = day
+                this.month = month
+                this.year = year
+            }
+
+            getDay() {
+                return this.day
+            }
+
+            getMonth() {
+                return this.month
+            }
+
+            getYear() {
+                return this.year
+            }
+
+            setDay(day) {
+                this.day = day
+            }
+
+            setMonth(month) {
+                this.month = month
+            }
+
+            setYear(year) {
+                this.year = year
+            }
+
+            setDate(day, month, year) {
+                this.day = day
+                this.month = month
+                this.year = year
+            }
+
+            toString() {
+                return `${this.day}/${this.month}/${this.year}`
+            }
+        }
+
+        let myDate = new MyDate(2, 2, 2007)
+
+        // let day = myDate.getDay()
+        // let month = myDate.getMonth()
+        // let year = myDate.getYear()
+
+        myDate.setDay(10)
+        myDate.setMonth(10)
+        myDate.setYear(2019)
+
+        // let day = myDate.getDay()
+        // let month = myDate.getMonth()
+        // let year = myDate.getYear()
+
+        // alert(day + "/" + month + "/" + year);
+
+        myDate.setDate(11, 06, 2022)
+
+        alert(myDate.toString())
+    </script>
+</body>
+
+</html>
